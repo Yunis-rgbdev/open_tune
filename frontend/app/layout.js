@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import ThemeToggle from '../components/ThemeToggle';
 import './globals.css';
 
 export const metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
             <span>Open Tune</span>
           </Link>
           <nav>
+            <ThemeToggle />
             <Link href="/login">Log In</Link>
             <Link href="/signup">Sign Up</Link>
           </nav>
